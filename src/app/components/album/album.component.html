@@ -1,0 +1,12 @@
+<div class="album" (mouseenter) ="mouseEnter() "  (mouseleave) ="mouseLeave()">
+  <div class="image">
+    <img src="{{ item.image }}" />
+    <button [hidden]="hidden"><i class="fa-solid fa-caret-right"></i></button>
+  </div>
+  <div class="content">
+    <a>{{ item.title }}</a>
+    <div class="content__description">
+      <span>{{ item.description }}</span>
+    </div>
+  </div>
+</div>

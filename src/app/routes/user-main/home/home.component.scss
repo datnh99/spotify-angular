@@ -1,0 +1,19 @@
+.home {
+  background-color: #171717;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.75rem;
+  font-weight: 700;
+  padding: 24px 32px 0;
+  font-size: 14px;
+  .play-list {
+    margin-bottom: 16px;
+    h2 {
+        margin-bottom: 16px;
+    }
+    .albums {
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+}

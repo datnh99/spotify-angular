@@ -1,0 +1,78 @@
+<div class="overview-layout">
+  <div class="overview-layout__message-bar">
+    <div>
+      <button (click)="changeLanguage()">{{ "overview-layout.change-language-message" | translate }}</button>
+    </div>
+    <div class="icon-clear"> 
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+  </div>
+  <div class="header">
+    <div class="logo">
+      <i class="fa-brands fa-spotify"></i>
+      <span class="title">Spotify</span>
+    </div>
+    <div class="menu">
+      <a class="element">{{ "overview-layout.premium-message" | translate }}</a>
+      <a class="element">{{ "overview-layout.support-message" | translate }}</a>
+      <a class="element">{{ "overview-layout.download-message" | translate }}</a>
+      <span class="space">|</span>
+      <!-- <div class="user-info">
+        <img src="./../../../assets/image/img.jpg" />
+        <a>{{ "overview-layout.profile-message" | translate }}</a>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div> -->
+      <a class="element">{{ "overview-layout.sign-up-message" | translate }}</a>
+      <a class="element" (click)="login()">{{ "overview-layout.login-message" | translate }}</a>
+    </div>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="footer">
+    <div class="footer-info">
+      <div class="main">
+        <div class="logo">
+          <i class="fa-brands fa-spotify"></i>
+          <span class="title">Spotify</span>
+        </div>
+        <ng-container *ngFor="let info of footerInfo">
+          <div class="element">
+            <ul>
+              <ng-container *ngFor="let ele of info">
+                <li>{{ ele }}</li>
+              </ng-container>
+            </ul>
+          </div>
+        </ng-container>
+      </div>
+      <div class="social">
+        <div class="element">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="element">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="element">
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+      </div>
+    </div>
+    <div class="foot-note">
+      <div class="display--right w-100">
+        <i class="fa-solid fa-earth-africa"></i>
+        <a>Viet Nam (Tiếng Việt)</a>
+      </div>
+      <div class="sub-info">
+        <div>
+          <ng-container *ngFor="let ele of subInfo">
+            <a class="element">{{ ele | translate }}</a>
+          </ng-container>
+        </div>
+        <div>
+          {{ "overview-layout.footer-language-message" | translate }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

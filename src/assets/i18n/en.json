@@ -1,0 +1,14 @@
+{
+    "overview-layout": {
+        "change-language-message": "Vietnam (English)",
+        "premium-message": "Premium",
+        "support-message": "Support",
+        "download-message": "Download",
+        "sign-up-message": "Sign up",
+        "login-message": "Log in",
+        "profile-message": "Profile",
+        "company-message": "COMPANY",
+        "legal-message": "Legal",
+        "footer-language-message": "© 2022 Spotify AB"
+    }
+}
